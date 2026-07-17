@@ -2,38 +2,44 @@
 
     <div class="top-header">
 
-        <!-- Logo -->
         <a href="index.html" class="logo">
-            <img src="images/kreyans-logo.png" alt="Kreyans Logo">
+            Kre<span>yans</span>
         </a>
 
-        <!-- Search -->
         <div class="search-container">
 
             <select id="search-category">
-                <option value="all">All Categories</option>
+                <option value="all">All</option>
                 <option value="electronics">Electronics</option>
                 <option value="fashion">Fashion</option>
-                <option value="home">Home & Living</option>
+                <option value="home">Home</option>
                 <option value="beauty">Beauty</option>
-                <option value="accessories">Accessories</option>
-                <option value="sports">Sports</option>
             </select>
 
             <input
-                type="search"
+                type="text"
                 id="global-search"
                 placeholder="Search products..."
             >
 
-            <button type="button" id="search-button">
+            <button type="button" id="search-button" aria-label="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
 
         </div>
 
-        <!-- Header Actions -->
+
         <div class="header-actions">
+
+            <a href="#" class="header-action account-action">
+                <i class="fa-regular fa-user"></i>
+
+                <div>
+                    <span>Hello, Guest</span>
+                    <strong>My Account</strong>
+                </div>
+            </a>
+
 
             <a href="wishlist.html" class="header-action icon-action">
 
@@ -42,70 +48,75 @@
                     <span class="count-badge" id="wishlist-count">0</span>
                 </div>
 
-                <strong>Wishlist</strong>
+                <span>Wishlist</span>
 
             </a>
+
 
             <a href="cart.html" class="header-action icon-action">
 
                 <div class="icon-wrapper">
-                    <i class="fa-solid fa-bag-shopping"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
                     <span class="count-badge" id="cart-count">0</span>
                 </div>
 
-                <strong>Cart</strong>
+                <span>Cart</span>
 
             </a>
-
-            <button
-                type="button"
-                class="mobile-menu-button"
-                id="mobile-menu-button"
-            >
-                <i class="fa-solid fa-bars"></i>
-            </button>
 
         </div>
 
     </div>
 
 
-    <!-- Navigation -->
     <nav class="main-nav">
 
         <div class="nav-content">
 
-            <div class="nav-links" id="nav-links">
+            <button class="mobile-menu-button" id="mobile-menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-                <a href="index.html">Home</a>
+            <ul class="nav-links" id="nav-links">
 
-                <a href="products.html">Shop</a>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
 
-                <a href="products.html?category=electronics">
-                    Electronics
-                </a>
+                <li>
+                    <a href="products.html">All Products</a>
+                </li>
 
-                <a href="products.html?category=fashion">
-                    Fashion
-                </a>
+                <li>
+                    <a href="products.html?category=electronics">
+                        Electronics
+                    </a>
+                </li>
 
-                <a href="products.html?category=home">
-                    Home & Living
-                </a>
+                <li>
+                    <a href="products.html?category=fashion">
+                        Fashion
+                    </a>
+                </li>
 
-                <a href="products.html?category=beauty">
-                    Beauty
-                </a>
+                <li>
+                    <a href="products.html?category=home">
+                        Home & Living
+                    </a>
+                </li>
 
-                <a href="about.html">About</a>
+                <li>
+                    <a href="products.html?category=beauty">
+                        Beauty
+                    </a>
+                </li>
 
-                <a href="contact.html">Contact</a>
+            </ul>
 
-            </div>
 
             <a href="products.html" class="nav-offer">
                 <i class="fa-solid fa-bolt"></i>
-                Explore Products
+                Today's Deals
             </a>
 
         </div>

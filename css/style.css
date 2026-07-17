@@ -3971,16 +3971,3 @@ input:checked
 
     transform: translateY(-2px);
 }
-
-.logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.logo img {
-    width: 180px;
-    height: 60px;
-    object-fit: contain;
-    display: block;
-}

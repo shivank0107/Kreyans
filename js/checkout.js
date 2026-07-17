@@ -18,7 +18,7 @@ function initializeCheckout() {
 function getCheckoutCart() {
 
     return JSON.parse(
-        localStorage.getItem("zenvoraCart")
+        localStorage.getItem("KreyansCart")
     ) || [];
 
 }
@@ -411,7 +411,7 @@ function placeOrder() {
     const orders =
         JSON.parse(
             localStorage.getItem(
-                "zenvoraOrders"
+                "KreyansOrders"
             )
         ) || [];
 
@@ -420,13 +420,13 @@ function placeOrder() {
 
 
     localStorage.setItem(
-        "zenvoraOrders",
+        "KreyansOrders",
         JSON.stringify(orders)
     );
 
 
     localStorage.removeItem(
-        "zenvoraCart"
+        "KreyansCart"
     );
 
 

@@ -260,7 +260,7 @@ function addToCart(productId) {
 
 
     let cart = JSON.parse(
-        localStorage.getItem("zenvoraCart")
+        localStorage.getItem("KreyansCart")
     ) || [];
 
 
@@ -285,7 +285,7 @@ function addToCart(productId) {
 
 
     localStorage.setItem(
-        "zenvoraCart",
+        "KreyansCart",
         JSON.stringify(cart)
     );
 
@@ -315,7 +315,7 @@ function addToWishlist(productId) {
 
 
     let wishlist = JSON.parse(
-        localStorage.getItem("zenvoraWishlist")
+        localStorage.getItem("KreyansWishlist")
     ) || [];
 
 
@@ -342,7 +342,7 @@ function addToWishlist(productId) {
 
 
     localStorage.setItem(
-        "zenvoraWishlist",
+        "KreyansWishlist",
         JSON.stringify(wishlist)
     );
 
@@ -365,7 +365,7 @@ function showNotification(message) {
 
     const existingNotification =
         document.querySelector(
-            ".zenvora-notification"
+            ".Kreyans-notification"
         );
 
 
@@ -381,7 +381,7 @@ function showNotification(message) {
 
 
     notification.className =
-        "zenvora-notification";
+        "Kreyans-notification";
 
 
     notification.innerHTML = `

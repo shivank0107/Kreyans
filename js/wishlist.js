@@ -7,7 +7,7 @@ document.addEventListener(
 function getWishlist() {
 
     return JSON.parse(
-        localStorage.getItem("zenvoraWishlist")
+        localStorage.getItem("KreyansWishlist")
     ) || [];
 
 }
@@ -16,7 +16,7 @@ function getWishlist() {
 function saveWishlist(wishlist) {
 
     localStorage.setItem(
-        "zenvoraWishlist",
+        "KreyansWishlist",
         JSON.stringify(wishlist)
     );
 
@@ -282,7 +282,7 @@ function moveWishlistItemToCart(productId) {
 
 
     let cart = JSON.parse(
-        localStorage.getItem("zenvoraCart")
+        localStorage.getItem("KreyansCart")
     ) || [];
 
 
@@ -308,7 +308,7 @@ function moveWishlistItemToCart(productId) {
 
 
     localStorage.setItem(
-        "zenvoraCart",
+        "KreyansCart",
         JSON.stringify(cart)
     );
 
@@ -336,7 +336,7 @@ function clearWishlist() {
 
 
     localStorage.removeItem(
-        "zenvoraWishlist"
+        "KreyansWishlist"
     );
 
 

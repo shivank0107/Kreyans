@@ -34,7 +34,7 @@ function loadProductDetails() {
 
 
     document.title =
-        `${currentProduct.name} | Zenvora`;
+        `${currentProduct.name} | Kreyans`;
 
 
     const breadcrumb =
@@ -144,7 +144,7 @@ function renderProductDetails() {
 
                 Experience quality, style and performance
                 with the ${currentProduct.name}.
-                Carefully selected by Zenvora to bring
+                Carefully selected by Kreyans to bring
                 convenience and value to your everyday life.
 
             </p>
@@ -313,7 +313,7 @@ function addCurrentProductToCart() {
 
     let cart =
         JSON.parse(
-            localStorage.getItem("zenvoraCart")
+            localStorage.getItem("KreyansCart")
         ) || [];
 
 
@@ -340,7 +340,7 @@ function addCurrentProductToCart() {
 
 
     localStorage.setItem(
-        "zenvoraCart",
+        "KreyansCart",
         JSON.stringify(cart)
     );
 

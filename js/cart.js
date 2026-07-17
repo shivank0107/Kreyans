@@ -7,7 +7,7 @@ document.addEventListener(
 function getCart() {
 
     return JSON.parse(
-        localStorage.getItem("zenvoraCart")
+        localStorage.getItem("KreyansCart")
     ) || [];
 
 }
@@ -16,7 +16,7 @@ function getCart() {
 function saveCart(cart) {
 
     localStorage.setItem(
-        "zenvoraCart",
+        "KreyansCart",
         JSON.stringify(cart)
     );
 
@@ -342,7 +342,7 @@ function clearCart() {
 
 
     localStorage.removeItem(
-        "zenvoraCart"
+        "KreyansCart"
     );
 
 

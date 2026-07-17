@@ -1,5 +1,5 @@
 /* =========================================================
-   ZENVORA - MAIN STYLESHEET
+   Kreyans - MAIN STYLESHEET
    ========================================================= */
 
 * {
@@ -998,7 +998,7 @@ img {
    NOTIFICATIONS
    ========================================================= */
 
-.zenvora-notification {
+.kreyans-notification {
     position: fixed;
 
     right: 25px;
@@ -1029,17 +1029,17 @@ img {
     transition: 0.3s ease;
 }
 
-.zenvora-notification.show {
+.kreyans-notification.show {
     transform: translateY(0);
 
     opacity: 1;
 }
 
-.zenvora-notification i {
+.kreyans-notification i {
     color: #22c55e;
 }
 
-.zenvora-notification span {
+.kreyans-notification span {
     font-size: 13px;
     font-weight: 500;
 }

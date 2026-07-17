@@ -215,7 +215,7 @@ function updateHeaderCounters() {
     const cart =
         JSON.parse(
             localStorage.getItem(
-                "zenvoraCart"
+                "KreyansCart"
             )
         ) || [];
 
@@ -223,7 +223,7 @@ function updateHeaderCounters() {
     const wishlist =
         JSON.parse(
             localStorage.getItem(
-                "zenvoraWishlist"
+                "KreyansWishlist"
             )
         ) || [];
 

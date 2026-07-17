@@ -1,169 +1,69 @@
-<!-- =========================================================
-     KREYANS HEADER
-     ========================================================= -->
-
 <header class="site-header">
 
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="top-bar-container">
+    <div class="top-header">
 
-            <p>
-                <i class="fa-solid fa-truck-fast"></i>
-                Free delivery on eligible orders
-            </p>
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="images/kreyans-logo.png" alt="Kreyans Logo">
+        </a>
 
-            <div class="top-bar-links">
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
+        <!-- Search -->
+        <div class="search-container">
+
+            <select id="search-category">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home & Living</option>
+                <option value="beauty">Beauty</option>
+                <option value="accessories">Accessories</option>
+                <option value="sports">Sports</option>
+            </select>
+
+            <input
+                type="search"
+                id="global-search"
+                placeholder="Search products..."
+            >
+
+            <button type="button" id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
 
         </div>
-    </div>
 
+        <!-- Header Actions -->
+        <div class="header-actions">
 
-    <!-- Main Header -->
-    <div class="main-header">
+            <a href="wishlist.html" class="header-action icon-action">
 
-        <div class="header-container">
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="count-badge" id="wishlist-count">0</span>
+                </div>
 
-            <!-- Logo -->
-            <a href="index.html" class="logo">
-                <img
-                    src="images/kreyans-logo.png"
-                    alt="Kreyans"
-                    class="header-logo"
-                >
+                <strong>Wishlist</strong>
+
             </a>
 
+            <a href="cart.html" class="header-action icon-action">
 
-            <!-- Search -->
-            <div class="header-search">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count-badge" id="cart-count">0</span>
+                </div>
 
-                <select
-                    id="search-category"
-                    aria-label="Select product category"
-                >
-                    <option value="all">
-                        All Categories
-                    </option>
+                <strong>Cart</strong>
 
-                    <option value="electronics">
-                        Electronics
-                    </option>
+            </a>
 
-                    <option value="fashion">
-                        Fashion
-                    </option>
-
-                    <option value="home">
-                        Home & Living
-                    </option>
-
-                    <option value="beauty">
-                        Beauty
-                    </option>
-
-                    <option value="accessories">
-                        Accessories
-                    </option>
-
-                    <option value="sports">
-                        Sports
-                    </option>
-                </select>
-
-
-                <input
-                    type="search"
-                    id="global-search"
-                    placeholder="Search products..."
-                    autocomplete="off"
-                    aria-label="Search products"
-                >
-
-
-                <button
-                    type="button"
-                    id="search-button"
-                    aria-label="Search"
-                >
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-
-            </div>
-
-
-            <!-- Header Actions -->
-            <div class="header-actions">
-
-                <!-- Wishlist -->
-                <a
-                    href="wishlist.html"
-                    class="header-action"
-                    aria-label="Wishlist"
-                >
-
-                    <div class="header-icon">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                        <span
-                            class="header-counter"
-                            id="wishlist-count"
-                        >
-                            0
-                        </span>
-
-                    </div>
-
-                    <span class="header-action-text">
-                        Wishlist
-                    </span>
-
-                </a>
-
-
-                <!-- Cart -->
-                <a
-                    href="cart.html"
-                    class="header-action"
-                    aria-label="Shopping cart"
-                >
-
-                    <div class="header-icon">
-
-                        <i class="fa-solid fa-bag-shopping"></i>
-
-                        <span
-                            class="header-counter"
-                            id="cart-count"
-                        >
-                            0
-                        </span>
-
-                    </div>
-
-                    <span class="header-action-text">
-                        Cart
-                    </span>
-
-                </a>
-
-
-                <!-- Mobile Menu Button -->
-                <button
-                    type="button"
-                    class="mobile-menu-button"
-                    id="mobile-menu-button"
-                    aria-label="Open navigation menu"
-                >
-
-                    <i class="fa-solid fa-bars"></i>
-
-                </button>
-
-            </div>
+            <button
+                type="button"
+                class="mobile-menu-button"
+                id="mobile-menu-button"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
         </div>
 
@@ -171,22 +71,15 @@
 
 
     <!-- Navigation -->
-    <nav class="main-navigation">
+    <nav class="main-nav">
 
-        <div class="navigation-container">
+        <div class="nav-content">
 
-            <div
-                class="nav-links"
-                id="nav-links"
-            >
+            <div class="nav-links" id="nav-links">
 
-                <a href="index.html">
-                    Home
-                </a>
+                <a href="index.html">Home</a>
 
-                <a href="products.html">
-                    Shop
-                </a>
+                <a href="products.html">Shop</a>
 
                 <a href="products.html?category=electronics">
                     Electronics
@@ -204,21 +97,13 @@
                     Beauty
                 </a>
 
-                <a href="about.html">
-                    About
-                </a>
+                <a href="about.html">About</a>
 
-                <a href="contact.html">
-                    Contact
-                </a>
+                <a href="contact.html">Contact</a>
 
             </div>
 
-
-            <a
-                href="products.html"
-                class="nav-offer"
-            >
+            <a href="products.html" class="nav-offer">
                 <i class="fa-solid fa-bolt"></i>
                 Explore Products
             </a>

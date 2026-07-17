@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Kreyans</string>
+    <string name="title_activity_main">Kreyans</string>
+    <string name="package_name">com.kreyans.app</string>
+    <string name="custom_url_scheme">com.kreyans.app</string>
+</resources>

@@ -1,122 +1,226 @@
+<!-- =========================================================
+     KREYANS HEADER
+     ========================================================= -->
+
 <header class="site-header">
 
-    <div class="top-header">
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
 
-        <a href="index.html" class="logo">
-            Kre<span>yans</span>
-        </a>
+            <p>
+                <i class="fa-solid fa-truck-fast"></i>
+                Free delivery on eligible orders
+            </p>
 
-        <div class="search-container">
-
-            <select id="search-category">
-                <option value="all">All</option>
-                <option value="electronics">Electronics</option>
-                <option value="fashion">Fashion</option>
-                <option value="home">Home</option>
-                <option value="beauty">Beauty</option>
-            </select>
-
-            <input
-                type="text"
-                id="global-search"
-                placeholder="Search products..."
-            >
-
-            <button type="button" id="search-button" aria-label="Search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+            <div class="top-bar-links">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
 
         </div>
+    </div>
 
 
-        <div class="header-actions">
+    <!-- Main Header -->
+    <div class="main-header">
 
-            <a href="#" class="header-action account-action">
-                <i class="fa-regular fa-user"></i>
+        <div class="header-container">
 
-                <div>
-                    <span>Hello, Guest</span>
-                    <strong>My Account</strong>
-                </div>
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img
+                    src="images/kreyans-logo.png"
+                    alt="Kreyans"
+                    class="header-logo"
+                >
             </a>
 
 
-            <a href="wishlist.html" class="header-action icon-action">
+            <!-- Search -->
+            <div class="header-search">
 
-                <div class="icon-wrapper">
-                    <i class="fa-regular fa-heart"></i>
-                    <span class="count-badge" id="wishlist-count">0</span>
-                </div>
+                <select
+                    id="search-category"
+                    aria-label="Select product category"
+                >
+                    <option value="all">
+                        All Categories
+                    </option>
 
-                <span>Wishlist</span>
+                    <option value="electronics">
+                        Electronics
+                    </option>
 
-            </a>
+                    <option value="fashion">
+                        Fashion
+                    </option>
+
+                    <option value="home">
+                        Home & Living
+                    </option>
+
+                    <option value="beauty">
+                        Beauty
+                    </option>
+
+                    <option value="accessories">
+                        Accessories
+                    </option>
+
+                    <option value="sports">
+                        Sports
+                    </option>
+                </select>
 
 
-            <a href="cart.html" class="header-action icon-action">
+                <input
+                    type="search"
+                    id="global-search"
+                    placeholder="Search products..."
+                    autocomplete="off"
+                    aria-label="Search products"
+                >
 
-                <div class="icon-wrapper">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="count-badge" id="cart-count">0</span>
-                </div>
 
-                <span>Cart</span>
+                <button
+                    type="button"
+                    id="search-button"
+                    aria-label="Search"
+                >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
 
-            </a>
+            </div>
+
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+
+                <!-- Wishlist -->
+                <a
+                    href="wishlist.html"
+                    class="header-action"
+                    aria-label="Wishlist"
+                >
+
+                    <div class="header-icon">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <span
+                            class="header-counter"
+                            id="wishlist-count"
+                        >
+                            0
+                        </span>
+
+                    </div>
+
+                    <span class="header-action-text">
+                        Wishlist
+                    </span>
+
+                </a>
+
+
+                <!-- Cart -->
+                <a
+                    href="cart.html"
+                    class="header-action"
+                    aria-label="Shopping cart"
+                >
+
+                    <div class="header-icon">
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                        <span
+                            class="header-counter"
+                            id="cart-count"
+                        >
+                            0
+                        </span>
+
+                    </div>
+
+                    <span class="header-action-text">
+                        Cart
+                    </span>
+
+                </a>
+
+
+                <!-- Mobile Menu Button -->
+                <button
+                    type="button"
+                    class="mobile-menu-button"
+                    id="mobile-menu-button"
+                    aria-label="Open navigation menu"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
 
         </div>
 
     </div>
 
 
-    <nav class="main-nav">
+    <!-- Navigation -->
+    <nav class="main-navigation">
 
-        <div class="nav-content">
+        <div class="navigation-container">
 
-            <button class="mobile-menu-button" id="mobile-menu-button">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <div
+                class="nav-links"
+                id="nav-links"
+            >
 
-            <ul class="nav-links" id="nav-links">
+                <a href="index.html">
+                    Home
+                </a>
 
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
+                <a href="products.html">
+                    Shop
+                </a>
 
-                <li>
-                    <a href="products.html">All Products</a>
-                </li>
+                <a href="products.html?category=electronics">
+                    Electronics
+                </a>
 
-                <li>
-                    <a href="products.html?category=electronics">
-                        Electronics
-                    </a>
-                </li>
+                <a href="products.html?category=fashion">
+                    Fashion
+                </a>
 
-                <li>
-                    <a href="products.html?category=fashion">
-                        Fashion
-                    </a>
-                </li>
+                <a href="products.html?category=home">
+                    Home & Living
+                </a>
 
-                <li>
-                    <a href="products.html?category=home">
-                        Home & Living
-                    </a>
-                </li>
+                <a href="products.html?category=beauty">
+                    Beauty
+                </a>
 
-                <li>
-                    <a href="products.html?category=beauty">
-                        Beauty
-                    </a>
-                </li>
+                <a href="about.html">
+                    About
+                </a>
 
-            </ul>
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
 
 
-            <a href="products.html" class="nav-offer">
+            <a
+                href="products.html"
+                class="nav-offer"
+            >
                 <i class="fa-solid fa-bolt"></i>
-                Today's Deals
+                Explore Products
             </a>
 
         </div>

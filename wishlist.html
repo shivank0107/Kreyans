@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Wishlist | Zenvora</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main>
+
+        <section class="wishlist-page">
+
+            <div class="wishlist-header">
+
+                <div>
+                    <span class="section-label">Saved For Later</span>
+                    <h1>My Wishlist</h1>
+
+                    <p id="wishlist-page-count">
+                        0 products saved
+                    </p>
+                </div>
+
+
+                <button
+                    type="button"
+                    id="clear-wishlist-button"
+                    onclick="clearWishlist()"
+                >
+                    <i class="fa-regular fa-trash-can"></i>
+                    Clear Wishlist
+                </button>
+
+            </div>
+
+
+            <!-- Wishlist Products -->
+
+            <div
+                id="wishlist-products"
+                class="wishlist-grid"
+            >
+            </div>
+
+
+            <!-- Empty Wishlist -->
+
+            <div
+                id="empty-wishlist"
+                class="empty-wishlist"
+            >
+
+                <div class="empty-wishlist-icon">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                </div>
+
+                <h2>Your wishlist is empty</h2>
+
+                <p>
+                    Save products you love and find them
+                    easily whenever you're ready to shop.
+                </p>
+
+                <a
+                    href="products.html"
+                    class="btn btn-primary"
+                >
+                    Explore Products
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <div id="footer"></div>
+
+
+    <script src="js/components.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wishlist.js"></script>
+
+</body>
+</html>

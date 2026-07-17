@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop All Products | Zenvora</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main>
+
+        <section class="shop-hero">
+
+            <span>Discover Zenvora</span>
+
+            <h1>Shop Our Collection</h1>
+
+            <p>
+                Explore quality products selected for your everyday needs.
+            </p>
+
+        </section>
+
+
+        <section class="shop-section">
+
+            <!-- Filters -->
+
+            <aside class="shop-sidebar">
+
+                <div class="filter-header">
+
+                    <h3>Filters</h3>
+
+                    <button
+                        type="button"
+                        id="clear-filters"
+                    >
+                        Clear
+                    </button>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <h4>Categories</h4>
+
+                    <label class="filter-option">
+                        <input
+                            type="radio"
+                            name="category"
+                            value="all"
+                            checked
+                        >
+                        <span>All Products</span>
+                    </label>
+
+                    <label class="filter-option">
+                        <input
+                            type="radio"
+                            name="category"
+                            value="electronics"
+                        >
+                        <span>Electronics</span>
+                    </label>
+
+                    <label class="filter-option">
+                        <input
+                            type="radio"
+                            name="category"
+                            value="fashion"
+                        >
+                        <span>Fashion</span>
+                    </label>
+
+                    <label class="filter-option">
+                        <input
+                            type="radio"
+                            name="category"
+                            value="home"
+                        >
+                        <span>Home & Living</span>
+                    </label>
+
+                    <label class="filter-option">
+                        <input
+                            type="radio"
+                            name="category"
+                            value="beauty"
+                        >
+                        <span>Beauty</span>
+                    </label>
+
+                </div>
+
+            </aside>
+
+
+            <!-- Products Area -->
+
+            <div class="shop-content">
+
+                <div class="shop-toolbar">
+
+                    <div>
+
+                        <h2>All Products</h2>
+
+                        <p id="product-result-count">
+                            0 products found
+                        </p>
+
+                    </div>
+
+
+                    <div class="sort-container">
+
+                        <label for="sort-products">
+                            Sort by:
+                        </label>
+
+                        <select id="sort-products">
+
+                            <option value="default">
+                                Featured
+                            </option>
+
+                            <option value="price-low">
+                                Price: Low to High
+                            </option>
+
+                            <option value="price-high">
+                                Price: High to Low
+                            </option>
+
+                            <option value="rating">
+                                Highest Rated
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="all-products"
+                    class="product-grid"
+                >
+                </div>
+
+
+                <div
+                    id="no-products"
+                    class="no-products"
+                >
+
+                    <i class="fa-solid fa-box-open"></i>
+
+                    <h3>No products found</h3>
+
+                    <p>
+                        Try changing your search or filters.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <div id="footer"></div>
+
+
+    <script src="js/components.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/products-page.js"></script>
+
+</body>
+</html>
